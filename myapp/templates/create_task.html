@@ -4,4 +4,12 @@
 
 <h1>Create new Task</h1>
 
+<form method="POST">
+    {% csrf_token %}
+    {{ forms.as_p }}
+    <button>
+        Save
+    </button>
+</form>
+
 {% endblock %}
