@@ -8,6 +8,7 @@ urlpatterns = [
     #path('hello/<int:id>', views.hello),
     path('hello/<str:username>', views.hello),
     path('project/', views.project),
-    path('task/<int:id>', views.task)
+    #path('task/<int:id>', views.task)
+    path('task/', views.task)
 ]
 
