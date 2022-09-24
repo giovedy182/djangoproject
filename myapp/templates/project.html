@@ -1,11 +1,14 @@
-<h1>project</h1>
+{% extends 'layouts/base.html' %}
 
-<!-- <p> {{ project }} </p> -->
+{% block content %}
 
-{% for project in project %}
+    <h1>project</h1>
+    <!-- <p> {{ project }} </p> -->
+    {% for project in project %}
+        <article>
+            <p> {{ project.name }} </p>
+        </article>
+    {% endfor %}
 
-<article>
-    <p> {{ project.name }} </p>
-</article>
+{% endblock %}
 
-{% endfor %}
