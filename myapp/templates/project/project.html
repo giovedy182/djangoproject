@@ -5,8 +5,10 @@
     <h1>project</h1>
     <!-- <p> {{ project }} </p> -->
     {% for project in project %}
-        <article>
-            <p> {{ project.name }} </p>
+        <article class="card">
+            <a href="{% url 'project_detail' project.id %}">
+                <h1>{{ project.name }}</h1>
+            </a>
         </article>
     {% endfor %}
 
